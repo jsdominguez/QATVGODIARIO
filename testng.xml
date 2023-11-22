@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="TvGo">
+
+
+    <test name="Validate-Content-Daily" enabled="true" >
+        <parameter name="urlXML" value="https://tvgo.americatv.com.pe/sitemap.xml"></parameter>
+        <parameter name="paramUser" value="tvgouser@gmail.com"></parameter>
+        <parameter name="paramPass" value="123456"></parameter>
+        <classes>
+            <class name="tests.ContentTets">
+                <methods>
+                    <include name="contentDayly"></include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
